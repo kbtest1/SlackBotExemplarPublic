@@ -1,4 +1,4 @@
-# SlackBot Exemplar Public
+# SlackBot Exemplar Public 🌈
 
 This repository contains a quick start to preview Redefine.dev app for Slack.
 
