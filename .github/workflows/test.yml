@@ -15,7 +15,7 @@ jobs:
       - run: pip install pytest
 
       - name: start redefine
-        uses: redefinedev/redefine-action@v1
+        uses: redefinedev/redefine-action@49447c2c9d81111937da38bfd20bdf59ca83e514 # main
         with:
           auth: ${{ secrets.REDEFINE_AUTH }}
           testing-framework: pytest
