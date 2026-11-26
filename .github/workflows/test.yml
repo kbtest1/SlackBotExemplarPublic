@@ -7,16 +7,15 @@ jobs:
   test-python:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - run: pip install pytest
-      - run: pip install redefine --index-url https://redefine.dev/pip
 
       - name: start redefine
-        uses: redefinedev/redefine-action@1
+        uses: redefinedev/redefine-action@49447c2c9d81111937da38bfd20bdf59ca83e514 # main
         with:
           auth: ${{ secrets.REDEFINE_AUTH }}
           testing-framework: pytest
