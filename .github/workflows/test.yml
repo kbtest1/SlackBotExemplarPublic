@@ -13,10 +13,9 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install pytest
-      - run: pip install redefine --index-url https://redefine.dev/pip
 
       - name: start redefine
-        uses: redefinedev/redefine-action@1
+        uses: redefinedev/redefine-action@v1
         with:
           auth: ${{ secrets.REDEFINE_AUTH }}
           testing-framework: pytest
